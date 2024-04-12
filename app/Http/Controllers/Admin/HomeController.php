@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Models\Image;
+use App\Models\Partner;
 use Illuminate\Contracts\Support\Renderable;
 use App\Http\Controllers\Controller;
 
@@ -24,6 +26,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard');
+        $imageCount = count(Image::all());
+        $partnerCount = count(Partner::all());
+        return view('admin.dashboard', compact('imageCount', 'partnerCount'));
     }
 }

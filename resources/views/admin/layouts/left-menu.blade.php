@@ -23,11 +23,5 @@
                 <i class="fa-solid fa-address-card me-1"></i>
                 Contact</a>
         </li>
-        <li class="">
-            <a href="#">
-                <i class="fa-solid fa-handshake me-1"></i>
-                Partners
-            </a>
-        </li>
     </ul>
 </section>
