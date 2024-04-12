@@ -14,7 +14,7 @@
         </li>
         <li class="{{isActiveRoute('partners.index')}}">
             <a href="{{route('partners.index')}}">
-                <i class="fa-solid fa-images"></i>
+                <i class="fa-solid fa-handshake"></i>
                 Partners
             </a>
         </li>
