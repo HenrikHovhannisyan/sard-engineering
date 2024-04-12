@@ -7,9 +7,6 @@
                 <div class="card">
                     <div class="card-header">{{ __('Login') }}</div>
                     <div class="card-body">
-                        @if(Session::has('error'))
-                            @include('vendor.notifications.error')
-                        @endif
                         <form method="POST" action="{{ route('login') }}">
                             @csrf
 
