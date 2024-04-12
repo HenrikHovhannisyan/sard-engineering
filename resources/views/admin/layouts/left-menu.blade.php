@@ -12,6 +12,12 @@
                 Images
             </a>
         </li>
+        <li class="{{isActiveRoute('partners.index')}}">
+            <a href="{{route('partners.index')}}">
+                <i class="fa-solid fa-images"></i>
+                Partners
+            </a>
+        </li>
         <li class="">
             <a href="#">
                 <i class="fa-solid fa-address-card me-1"></i>
