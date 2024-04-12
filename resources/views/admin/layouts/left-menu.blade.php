@@ -1,12 +1,12 @@
 <section id="sidebar">
     <ul class="list-unstyled components">
-        <li class="active">
+        <li class="{{isActiveRoute('dashboard')}}">
             <a href="{{route('dashboard')}}">
                 <i class="fa-solid fa-desktop me-1"></i>
                 Dashboard
             </a>
         </li>
-        <li class="">
+        <li class="{{isActiveRoute('images.index')}}">
             <a href="{{route('images.index')}}">
                 <i class="fa-solid fa-images"></i>
                 Images

@@ -38,7 +38,7 @@ a {
 
 #sidebar ul li a:hover {
     color: #000000;
-    background: #fff;
+    background-color: #f6fbf5;
 }
 
 #sidebar ul li.active > a {
