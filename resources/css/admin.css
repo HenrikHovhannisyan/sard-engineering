@@ -1,5 +1,13 @@
+body {
+    background-color: #f6fbf5;
+}
+
 a {
     text-decoration: none;
+}
+
+.admin-nav {
+    background-color: #43cc61;
 }
 
 /* Start Left Menu */
@@ -12,7 +20,7 @@ a {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #43cc61;
+    background-color: #43cc61;
     color: #fff;
     transition: all 0.3s;
 }
