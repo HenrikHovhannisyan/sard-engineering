@@ -87,6 +87,7 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-dark mb-3">
                     <i class="fas fa-align-left"></i>
                 </button>
+                @include('vendor.flash-message')
                 @yield('content')
             </div>
         </div>
