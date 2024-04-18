@@ -28,8 +28,8 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="form-group">
-                    <strong>Image:</strong>
-                    <input type="file" name="image" class="form-control" placeholder="image">
+                    <strong>Image: <span class="text-danger">*</span></strong>
+                    <input type="file" name="image" class="form-control" placeholder="image" required>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

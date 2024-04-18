@@ -23,6 +23,7 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'is_admin'], 'names
     Route::get('/', 'HomeController@index')->name('dashboard');
     Route::resource('images', ImageController::class);
     Route::resource('partners', PartnerController::class);
+    Route::resource('catalogs', CatalogController::class);
 });
 
 
