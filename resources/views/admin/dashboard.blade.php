@@ -18,6 +18,28 @@
                     </a>
                 </div>
             </div>
+            <div class="col-sm-6 col-lg-3 border rounded shadow-sm bg-info text-white p-3">
+                <div class="text-end">
+                    <i class="fa-solid fa-layer-group fa-5x"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-start mt-3">
+                    <h3 class="m-0">Catalog Brands - {{ $brandCount }}</h3>
+                    <a href="{{route('brands.index')}}" class="btn btn-outline-light ">
+                        View
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 border rounded shadow-sm bg-warning text-white p-3">
+                <div class="text-end">
+                    <i class="fa-solid fa-file-pdf fa-5x"></i>
+                </div>
+                <div class="d-flex justify-content-between align-items-start mt-3">
+                    <h3 class="m-0">Catalogs - {{ $catalogCount }}</h3>
+                    <a href="{{route('catalogs.index')}}" class="btn btn-outline-light ">
+                        View
+                    </a>
+                </div>
+            </div>
             <div class="col-sm-6 col-lg-3 border rounded shadow-sm bg-danger text-white p-3">
                 <div class="text-end">
                     <i class="fa-solid fa-handshake fa-5x"></i>
