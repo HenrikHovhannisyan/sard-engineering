@@ -29,7 +29,12 @@
             <div class="col-12 col-md-6">
                 <div class="form-group">
                     <strong>Brand: <span class="text-danger">*</span></strong>
-                    <input type="text" name="brand" class="form-control" placeholder="Brand" required>
+                    <select name="brand" class="form-control" required>
+                        <option value="">Select Brand</option>
+                        @foreach($brands as $brand)
+                            <option value="{{ $brand->name }}">{{ $brand->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="col-12 col-md-6">

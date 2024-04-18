@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Brand;
 use App\Models\Catalog;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -27,7 +28,8 @@ class CatalogController extends Controller
      */
     public function create()
     {
-        return view('admin.pages.catalogs.create');
+        $brands = Brand::all();
+        return view('admin.pages.catalogs.create', compact('brands'));
     }
 
     /**
@@ -39,7 +41,7 @@ class CatalogController extends Controller
     {
         $request->validate([
             'brand' => 'required',
-            'file' => 'nullable|file|mimes:pdf|max:2048',
+            'file' => 'nullable|file|mimes:pdf',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
@@ -68,7 +70,7 @@ class CatalogController extends Controller
     /**
      * Display the specified resource.
      * @param Catalog $catalog
-     * @return Factory|View
+     * @return void
      */
     public function show(Catalog $catalog)
     {
@@ -82,7 +84,8 @@ class CatalogController extends Controller
      */
     public function edit(Catalog $catalog)
     {
-        return view('admin.pages.catalogs.edit', compact('catalog'));
+        $brands = Brand::all();
+        return view('admin.pages.catalogs.edit', compact('catalog', 'brands'));
     }
 
     /**

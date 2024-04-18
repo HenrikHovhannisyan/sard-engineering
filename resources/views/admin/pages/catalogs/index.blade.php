@@ -17,44 +17,47 @@
         </div>
     </div>
 
-    <table class="table table-bordered">
-        <tr>
-            <th>No</th>
-            <th>Name</th>
-            <th>Image</th>
-            <th>File</th>
-            <th>Brand</th>
-            <th width="150px">Action</th>
-        </tr>
-        @foreach ($catalogs as $catalog)
+    <div class="table-responsive">
+        <table class="table table-bordered">
             <tr>
-                <td>{{ ++$i }}</td>
-                <td>{{ $catalog->name }}</td>
-                <td><img src="/uploaded/catalogs/images/{{ $catalog->image }}" width="100px"></td>
-                <td>
-                    <a href="/uploaded/catalogs/files//{{ $catalog->file }}" class="btn btn-outline-success" target="_blank">
-                        Open File
-                    </a>
-                </td>
-                <td>{{ $catalog->brand }}</td>
-                <td>
-                    <form action="{{ route('catalogs.destroy',$catalog->id) }}" method="POST">
-
-                        <a class="btn btn-outline-primary" href="{{ route('catalogs.edit',$catalog->id) }}">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </a>
-
-                        @csrf
-                        @method('DELETE')
-
-                        <button type="submit" class="btn btn-outline-danger">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </button>
-                    </form>
-                </td>
+                <th>No</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>File</th>
+                <th>Brand</th>
+                <th width="150px">Action</th>
             </tr>
-        @endforeach
-    </table>
+            @foreach ($catalogs as $catalog)
+                <tr>
+                    <td>{{ ++$i }}</td>
+                    <td>{{ $catalog->name }}</td>
+                    <td><img src="/uploaded/catalogs/images/{{ $catalog->image }}" width="100px"></td>
+                    <td>
+                        <a href="/uploaded/catalogs/files//{{ $catalog->file }}" class="btn btn-outline-success"
+                           target="_blank">
+                            Open File
+                        </a>
+                    </td>
+                    <td>{{ $catalog->brand }}</td>
+                    <td>
+                        <form action="{{ route('catalogs.destroy',$catalog->id) }}" method="POST">
+
+                            <a class="btn btn-outline-primary" href="{{ route('catalogs.edit',$catalog->id) }}">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+
+                            @csrf
+                            @method('DELETE')
+
+                            <button type="submit" class="btn btn-outline-danger">
+                                <i class="fa-regular fa-trash-can"></i>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            @endforeach
+        </table>
+    </div>
 
     {!! $catalogs->links() !!}
 

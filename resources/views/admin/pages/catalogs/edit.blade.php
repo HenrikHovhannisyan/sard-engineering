@@ -30,8 +30,14 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="form-group">
-                    <strong>Brand:</strong>
-                    <input type="text" name="brand" value="{{ $catalog->brand }}" class="form-control" placeholder="Brand">
+                    <strong>Brand: <span class="text-danger">*</span></strong>
+                    <select name="brand" class="form-control" required>
+                        @foreach($brands as $brand)
+                            <option value="{{ $brand->name }}" @if($brand->name === $catalog->brand) selected @endif>
+                                {{ $brand->name }}
+                            </option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="col-12 col-md-6">
@@ -47,7 +53,8 @@
                 <div class="form-group">
                     <strong>File:</strong>
                     <input type="file" name="file" accept="application/pdf" class="form-control" placeholder="File">
-                    <a href="/uploaded/catalogs/files//{{ $catalog->file }}" class="btn btn-outline-success mt-3" target="_blank">
+                    <a href="/uploaded/catalogs/files//{{ $catalog->file }}" class="btn btn-outline-success mt-3"
+                       target="_blank">
                         Open File
                     </a>
                 </div>
