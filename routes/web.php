@@ -22,6 +22,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'is_admin'], 'namespace' => '\App\Http\Controllers\Admin'], function () {
     Route::get('/', 'HomeController@index')->name('dashboard');
     Route::resource('images', ImageController::class);
+    Route::resource('brands', BrandController::class);
     Route::resource('partners', PartnerController::class);
     Route::resource('catalogs', CatalogController::class);
 });

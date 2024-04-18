@@ -12,6 +12,12 @@
                 Images
             </a>
         </li>
+        <li class="{{isActiveRoute('brands.index')}}">
+            <a href="{{route('brands.index')}}">
+                <i class="fa-solid fa-layer-group"></i>
+                Catalog Brands
+            </a>
+        </li>
         <li class="{{isActiveRoute('catalogs.index')}}">
             <a href="{{route('catalogs.index')}}">
                 <i class="fa-solid fa-file-pdf"></i>
