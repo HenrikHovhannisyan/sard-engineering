@@ -30,10 +30,11 @@
                 Partners
             </a>
         </li>
-        <li class="">
-            <a href="#">
+        <li class="{{isActiveRoute('contact.index')}}">
+            <a href="{{route('contact.index')}}">
                 <i class="fa-solid fa-address-card me-1"></i>
-                Contact</a>
+                Contact
+            </a>
         </li>
     </ul>
 </section>

@@ -25,6 +25,7 @@ Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'is_admin'], 'names
     Route::resource('brands', BrandController::class);
     Route::resource('partners', PartnerController::class);
     Route::resource('catalogs', CatalogController::class);
+    Route::resource('contact', ContactController::class);
 });
 
 
