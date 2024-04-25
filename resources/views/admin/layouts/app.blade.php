@@ -15,10 +15,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    <script src="{{ asset('js/admin.js') }}"></script>
 
-    @vite(['resources/sass/app.scss', 'resources/css/admin.css', 'resources/js/admin.js'])
+    {{--    @vite(['resources/sass/app.scss', 'resources/css/admin.css', 'resources/js/admin.js'])--}}
 </head>
 <body>
 <div id="app">
@@ -81,8 +90,8 @@
 
     <main>
         <div class="wrapper">
-            @include('admin.layouts.left-menu')
-            <!-- Page Content  -->
+        @include('admin.layouts.left-menu')
+        <!-- Page Content  -->
             <div id="content">
                 <button type="button" id="sidebarCollapse" class="btn btn-dark mb-3">
                     <i class="fas fa-align-left"></i>
