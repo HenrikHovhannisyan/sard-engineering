@@ -54,6 +54,6 @@
         </table>
     </div>
 
-    {!! $partners->links() !!}
+    {!! $partners->links('vendor.pagination.bootstrap-4') !!}
 
 @endsection

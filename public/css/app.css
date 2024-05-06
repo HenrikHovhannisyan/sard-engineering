@@ -6,6 +6,11 @@ a {
     text-decoration: none;
 }
 
+#banner,
+#our_works {
+    margin-bottom: 30px;
+}
+
 .web-nav {
     background-color: #43cc61;
 }

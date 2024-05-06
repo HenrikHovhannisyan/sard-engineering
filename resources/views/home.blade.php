@@ -40,11 +40,13 @@
         </div>
     </section>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h1>Coming soon</h1>
+    <section id="our_works">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h1>Our works</h1>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 @endsection

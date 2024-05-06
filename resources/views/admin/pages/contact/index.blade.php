@@ -48,6 +48,6 @@
         </table>
     </div>
 
-    {!! $contact->links() !!}
+    {!! $contact->links('vendor.pagination.bootstrap-4') !!}
 
 @endsection

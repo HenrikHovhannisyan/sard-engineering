@@ -46,6 +46,6 @@
         @endforeach
     </table>
 
-    {!! $brands->links() !!}
+    {!! $brands->links('vendor.pagination.bootstrap-4') !!}
 
 @endsection
