@@ -51,25 +51,24 @@
                         <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
                                 marginwidth="0"
                                 src="https://maps.google.com/maps?width=600&amp;height=200&amp;hl=en&amp;q=Sard Engineering&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <a href="https://embed-googlemap.com">embed-googlemap.com</a></div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>© <?php echo date("Y"); ?> {{ config('app.name', 'Laravel') }}, LLC. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-                <li class="ms-3">
-                    <a class="link-light" href="{{ $contact->facebook }}" target="_blank">
-                        <i class="fa-brands fa-square-facebook fa-2x"></i>
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a class="link-light" href="{{ $contact->instagram }}" target="_blank">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© <?php echo date("Y"); ?> {{ config('app.name', 'Laravel') }}, LLC. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="link-light" href="{{ $contact->facebook }}" target="_blank">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="link-light" href="{{ $contact->instagram }}" target="_blank">
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 </footer>
