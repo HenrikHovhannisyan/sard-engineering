@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-success shadow">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
+                <img src="{{ asset("/img/logo.png") }}" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -126,6 +126,7 @@
     <main class="">
         @include('vendor.flash-message')
         @yield('content')
+        @include('layouts.footer')
     </main>
 </div>
 </body>
