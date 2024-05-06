@@ -1,6 +1,7 @@
+// Start Banner
 const progressCircle = document.querySelector(".autoplay-progress svg");
 const progressContent = document.querySelector(".autoplay-progress span");
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
@@ -19,3 +20,15 @@ var swiper = new Swiper(".mySwiper", {
         }
     }
 });
+
+// End Banner
+
+// Start Our Works
+let myModal = document.getElementById('ourWorksModal');
+myModal.addEventListener('show.bs.modal', function (event) {
+    let image = event.relatedTarget.getAttribute('data-bs-image');
+    let modalImage = myModal.querySelector('#modalImage');
+    modalImage.src = image;
+})
+// End Our Works
+
