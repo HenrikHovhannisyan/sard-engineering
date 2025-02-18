@@ -44,3 +44,27 @@
         </ul>
     </nav>
 @endif
+
+<!-- Добавь кастомные стили -->
+<style>
+    .pagination .page-link {
+        color: #28a745; /* Зеленый цвет текста */
+        border: 1px solid #28a745; /* Зеленая рамка */
+    }
+
+    .pagination .page-link:hover {
+        background-color: #28a745; /* Зеленый фон при наведении */
+        color: #fff; /* Белый текст */
+    }
+
+    .pagination .active .page-link {
+        background-color: #28a745; /* Зеленый фон активного элемента */
+        border-color: #28a745;
+        color: #fff;
+    }
+
+    .pagination .disabled .page-link {
+        color: #6c757d; /* Серый цвет для неактивных ссылок */
+        border-color: #6c757d;
+    }
+</style>

@@ -92,6 +92,11 @@
                              data-bs-image="{{ asset("/uploaded/image/" . $work->image) }}">
                     </div>
                 @endforeach
+                <div class="col-12 text-center mt-4">
+                    <a href="{{ route('our-works') }}" class="btn btn-outline-success">
+                        View all
+                    </a>
+                </div>
             </div>
         </div>
     </section>

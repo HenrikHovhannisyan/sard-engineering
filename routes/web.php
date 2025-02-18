@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\Admin\BrandController;
+use App\Http\Controllers\Admin\CatalogController;
+use App\Http\Controllers\Admin\ContactController;
+use App\Http\Controllers\Admin\ImageController;
+use App\Http\Controllers\Admin\PartnerController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +23,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/our-works', [HomeController::class, 'ourWorks'])->name('our-works');
 
 Route::group(['prefix' => '/admin', 'middleware' => ['auth', 'is_admin'], 'namespace' => '\App\Http\Controllers\Admin'], function () {
     Route::get('/', 'HomeController@index')->name('dashboard');

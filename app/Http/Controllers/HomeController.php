@@ -20,4 +20,10 @@ class HomeController extends Controller
         $our_works = Image::latest()->take(8)->get();
         return view('home', compact('contact', 'our_works'));
     }
+
+    public function ourWorks()
+    {
+        $our_works = Image::latest()->paginate(16);
+        return view('pages.our-works', compact( 'our_works'));
+    }
 }
