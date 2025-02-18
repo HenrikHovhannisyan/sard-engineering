@@ -14,10 +14,9 @@
             <div class="col-12 col-md-2 mb-3">
                 <h5>Pages</h5>
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Catalogs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">Our works</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 link-light">About us</a></li>
+                    <li class="nav-item mb-2"><a href="{{ route('home') }}" class="nav-link p-0 link-light">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#about_us" class="nav-link p-0 link-light">About us</a></li>
+                    <li class="nav-item mb-2"><a href="#our_works" class="nav-link p-0 link-light">Our works</a></li>
                 </ul>
             </div>
 
