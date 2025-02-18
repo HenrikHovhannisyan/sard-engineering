@@ -5,29 +5,19 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img
-                        src="{{ asset('/img/banner/1.png') }}"
-                        class="img-fluid" alt="">
+                    <img src="{{ asset('/img/banner/1.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img
-                        src="{{ asset('/img/banner/2.png') }}"
-                        class="img-fluid" alt="">
+                    <img src="{{ asset('/img/banner/2.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img
-                        src="{{ asset('/img/banner/3.png') }}"
-                        class="img-fluid" alt="">
+                    <img src="{{ asset('/img/banner/3.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img
-                        src="{{ asset('/img/banner/4.png') }}"
-                        class="img-fluid" alt="">
+                    <img src="{{ asset('/img/banner/4.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="swiper-slide">
-                    <img
-                        src="{{ asset('/img/banner/5.png') }}"
-                        class="img-fluid" alt="">
+                    <img src="{{ asset('/img/banner/5.png') }}" class="img-fluid" alt="">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -36,6 +26,57 @@
                     <circle cx="24" cy="24" r="20"></circle>
                 </svg>
                 <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_us">
+        <h2 class="text-center mb-3">About us</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 m-auto">
+                    <div class="text-center mb-3">
+                        <img src="{{ asset("/img/green-logo.png") }}" class="img-fluid" alt="">
+                    </div>
+                    <p>
+                        <b>"Sard Engineering"</b> limited liability company is an industrial partner of <b>"Schneider
+                            Electric"</b> company - the world leader in the field of energy - in the development,
+                        manufacture and supply of distribution boards and automation system control panels.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Production process automation: design, preparation of estimate documentation and
+                                construction of control panels.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Design of distribution stations, equipment and main switchboards, preparation of
+                                estimates and construction of the general distribution system.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Design of power supply internal networks for buildings and structures, preparation of
+                                estimates and installation of the complete system from distribution boards to final
+                                consumers.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Professional quality assessment of the operating power supply system according to
+                                international standards and safety regulations.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Technical control of current and completed work (electrical distribution systems and
+                                internal electrical networks).
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>

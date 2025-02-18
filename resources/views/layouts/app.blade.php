@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css?v=5') }}">
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -27,14 +27,14 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="{{ asset('js/app.js') }}"></script>
+    <script defer src="{{ asset('js/app.js?v=5') }}"></script>
 
     <!-- Scripts -->
     {{--    @vite(['resources/sass/app.scss', 'resources/css/admin.css', 'resources/js/admin.js'])--}}
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-md navbar-dark bg-success shadow">
+    <nav class="navbar navbar-expand-md navbar-dark web-nav shadow">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="{{ asset("/img/logo.png") }}" alt="">
@@ -49,16 +49,13 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Catalogs</a>
+                        <a class="nav-link" href="#about_us">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#our_works">Our works</a>
                     </li>
                 </ul>
                 <ul class="d-flex navbar-nav">
@@ -72,7 +69,7 @@
                             </a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
                             English
@@ -81,7 +78,7 @@
                             <li><a class="dropdown-item" href="#">Русский</a></li>
                             <li><a class="dropdown-item" href="#">Հայերեն</a></li>
                         </ul>
-                    </li>
+                    </li>--}}
                 </ul>
 
                 <!-- Right Side Of Navbar -->
