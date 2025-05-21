@@ -5,19 +5,28 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="{{ asset('/img/banner/1.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/img/banner/1.jpg') }}" class="img-fluid" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('/img/banner/2.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/img/banner/2.jpg') }}" class="img-fluid" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('/img/banner/3.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/img/banner/3.jpg') }}" class="img-fluid" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('/img/banner/4.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/img/banner/4.jpg') }}" class="img-fluid" alt="">
             </div>
             <div class="swiper-slide">
-                <img src="{{ asset('/img/banner/5.png') }}" class="img-fluid" alt="">
+                <img src="{{ asset('/img/banner/5.jpg') }}" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('/img/banner/6.jpg') }}" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('/img/banner/7.jpg') }}" class="img-fluid" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('/img/banner/8.jpg') }}" class="img-fluid" alt="">
             </div>
         </div>
         <div class="swiper-pagination"></div>
