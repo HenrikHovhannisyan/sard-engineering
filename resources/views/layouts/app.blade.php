@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Sard Engineering') }} @yield('title')</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('/img/favicon.ico?v=1') }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -39,7 +40,7 @@
         <nav class="navbar navbar-expand-md navbar-dark web-nav shadow">
             <div class="container">
                 <a class="navbar-brand p-0" href="{{ url('/') }}">
-                    <img src="{{ asset('/img/logo.png') }}" height="40" alt="Logo">
+                    <img src="{{ asset('/img/logo.png?v=1') }}" height="40" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-12 col-md-10 m-auto">
                 <div class="text-center mb-3">
-                    <img src="{{ asset('/img/green-logo.png') }}" class="img-fluid" width='350' alt="Logo">
+                    <img src="{{ asset('/img/green-logo.png?v=1') }}" class="img-fluid" width='350' alt="Logo">
                 </div>
                 <p>
                     <b>"Sard Engineering"</b> limited liability company is an industrial partner of <b>"Schneider

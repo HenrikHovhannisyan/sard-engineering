@@ -5,7 +5,7 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="{{ asset('/img/logo.png') }}" class="img-fluid" width="150" alt="Logo">
+                            <img src="{{ asset('/img/logo.png?v=1') }}" class="img-fluid" width="150" alt="Logo">
                         </a>
                     </li>
                 </ul>
