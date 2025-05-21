@@ -6,14 +6,24 @@ a {
     text-decoration: none;
 }
 
+.btn-outline-success {
+    color: #02babb;
+    border-color: #02babb;
+}
+
+.btn-outline-success:hover {
+    background-color: #02babb;
+    border-color: #02babb;
+}
+
 #banner,
 #our_works {
     margin-bottom: 30px;
 }
 
 .web-nav {
-    background-color: #43cc61;
-    border-bottom: 1px solid #1f8657;
+    background-color: #02babb;
+    border-bottom: 1px solid #008686;
 }
 
 /* Start Banner */
@@ -43,7 +53,7 @@ a {
 
 .swiper-pagination {
     background-color: #00000075;
-    color: #43cc61;
+    color: #02babb;
     width: max-content;
     left: calc(50% - 16px);
     padding: 0 5px;
@@ -61,7 +71,7 @@ a {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #43cc61;
+    color: #02babb;
     background-color: #00000075;
     border-radius: 5px;
 }
@@ -75,7 +85,7 @@ a {
     width: 100%;
     height: 100%;
     stroke-width: 4px;
-    stroke: #43cc61;
+    stroke: #02babb;
     fill: none;
     stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
     stroke-dasharray: 125.6;
@@ -83,17 +93,22 @@ a {
 }
 /* End Banner */
 
+/* Start About us */
+#about_us b {
+    color: #02babb;
+}
+/* End About us */
+
 /* Start Our Works */
 #our_works img {
     max-height: 300px;
 }
 /* End Our Works */
 
-
 /* Start Footer */
 footer {
-    background-color: #43cc61;
-    border-top: 1px solid #1f8657;
+    background-color: #02babb;
+    border-top: 1px solid #008686;
 }
 .mapouter {
     position: relative;
